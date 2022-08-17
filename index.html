@@ -1,0 +1,30 @@
+<DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Chat Mockup in Vue</title>
+		<!-- Import Vue.js -->
+		<script src="https://unpkg.com/vue@3"></script>
+	</head>
+	
+	<body>
+		<div id="app">
+			<div class="chat-container">
+				<ul class="chat-message">
+					<li v-for="message in messages">
+						<b>{{message.name}}: </b><p>{{message.content}}</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- Import App -->
+		<script src="./main.js"></script>
+	
+		<!-- Mount App -->
+		<script>
+			const mountedApp = app.mount('#app')
+		</script>
+	</body>
+</html>
