@@ -16,6 +16,15 @@
 					</li>
 				</ul>
 			</div>
+			<form class="chat-inputs" @submit.prevent="onSubmit">
+				<label for="name">Name:</label><br>
+				<input id="name" v-model="newmsg.name"></input><br>
+
+				<label for="content">Post content:</label><br>
+				<textarea id="content" v-model="newmsg.content"></textarea><br>
+
+				<input class="button" type="submit" value="Submit"></input>
+			</form>
 		</div>
 		
 		
